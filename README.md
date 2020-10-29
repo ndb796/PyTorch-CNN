@@ -5,7 +5,7 @@
 
 ### MNIST Dataset
 
-* 전체 소스코드는 Google Colab을 이용해 실행할 수 있도록 작성했습니다.
+* <b>[전체 소스코드](/PyTorch_CNN_MNIST_Dataset.ipynb)</b>는 Google Colab을 이용해 실행할 수 있도록 작성했습니다.
 * MNIST 예제에 대해서 사용한 하이퍼 파라미터는 다음과 같습니다.
   * epoch = 10
   * learning_rate = 0.01
