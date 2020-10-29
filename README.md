@@ -25,7 +25,7 @@
 |학습(train)|99.97%|99.90%|99.33%|99.82%|99.59%|99.67%|99.88%|99.78%|99.56%|99.75%|99.73%|
 |테스트(test)|99.49%|99.91%|98.64%|99.21%|98.47%|98.43%|99.06%|99.32%|98.46%|98.71%|**98.99%**|
 
-* **[학습된 모델 다운로드](https://postechackr-my.sharepoint.com/:u:/g/personal/dongbinna_postech_ac_kr/EaLEiaWty0VKnJlfSHZwmkoBRMKuKa99rtR1j0m26l8MjA?download=1)**
+* **[학습된 모델 다운로드 (LeNet 1.64MB)](https://postechackr-my.sharepoint.com/:u:/g/personal/dongbinna_postech_ac_kr/EaLEiaWty0VKnJlfSHZwmkoBRMKuKa99rtR1j0m26l8MjA?download=1)**
 
 #### 2. AlexNet for MNIST
 
@@ -40,7 +40,7 @@
 |학습(train)|99.93%|99.15%|99.83%|99.72%|98.32%|99.69%|99.39%|99.36%|99.30%|99.66%|99.43%|
 |테스트(test)|99.80%|99.21%|99.81%|99.90%|98.37%|99.10%|98.43%|99.12%|99.49%|99.60%|**99.29%**|
 
-* **[학습된 모델 다운로드](https://postechackr-my.sharepoint.com/:u:/g/personal/dongbinna_postech_ac_kr/EZ4xVGbtpOxCgouOSqdK2MMBzySO8NqNg9uvN7vZPKZm4g?download=1)**
+* **[학습된 모델 다운로드 (AlexNet 29.4MB)](https://postechackr-my.sharepoint.com/:u:/g/personal/dongbinna_postech_ac_kr/EZ4xVGbtpOxCgouOSqdK2MMBzySO8NqNg9uvN7vZPKZm4g?download=1)**
 
 #### 3. (ImageNet Pretrained ResNet) Transfer Learning for MNIST
 
@@ -55,4 +55,4 @@
 |학습(train)|100.0%|100.0%|100.0%|100.0%|100.0%|100.0%|100.0%|100.0%|100.0%|100.0%|100.0%|
 |테스트(test)|99.90%|99.91%|99.61%|99.70%|99.29%|99.78%|99.27%|99.71%|99.79%|99.41%|**99.64%**|
 
-* **[학습된 모델 다운로드](https://postechackr-my.sharepoint.com/:u:/g/personal/dongbinna_postech_ac_kr/EaZXK45firZBmpetb4Mx0MsBm85RU3lIFAu27D9vsg_u0Q?download=1)**
+* **[학습된 모델 다운로드 (ResNet-18 42.7MB)](https://postechackr-my.sharepoint.com/:u:/g/personal/dongbinna_postech_ac_kr/EaZXK45firZBmpetb4Mx0MsBm85RU3lIFAu27D9vsg_u0Q?download=1)**
