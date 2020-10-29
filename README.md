@@ -16,6 +16,8 @@
 
 <img src="https://user-images.githubusercontent.com/16822641/97537367-0f119780-1a02-11eb-9d35-82ed55c6eeed.png" width="80%">
 
+* 테스트 정확도(Test accuracy): 98.99%
+
 * 클래스별 정확도 분석
 
 |Average precision|0|1|2|3|4|5|6|7|8|9|Total|
@@ -29,6 +31,8 @@
 
 <img src="https://user-images.githubusercontent.com/16822641/97537390-18026900-1a02-11eb-828a-80b156ff28e1.png" width="80%">
 
+* 테스트 정확도(Test accuracy): 99.29%
+
 * 클래스별 정확도 분석
 
 |Average precision|0|1|2|3|4|5|6|7|8|9|Total|
@@ -41,6 +45,8 @@
 #### 3. (ImageNet Pretrained ResNet) Transfer Learning for MNIST
 
 * Transfer learning을 위해 torchvision.models에 정의된 ResNet18 아키텍처를 따릅니다.
+
+* 테스트 정확도(Test accuracy): 99.64%
 
 * 클래스별 정확도 분석
 
