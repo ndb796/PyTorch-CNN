@@ -158,12 +158,20 @@ net = net.to(device)
 
 ### CIFAR-10 Dataset
 
-* CIFAR-10 예제에 대해서 사용한 하이퍼 파라미터는 다음과 같습니다.
+* CIFAR-10 제로 베이스 학습 예제에서 사용한 하이퍼 파라미터는 다음과 같습니다.
   * epoch = 200
   * learning_rate
     * 0.1 for epoch [0, 100)
     * 0.01 for epoch [100, 150)
     * 0.001 for epoch [150, 200)
+  * weight_decay = 0.0002
+  * momentum = 0.9
+
+* CIFAR-10 Transfer Learning 예제에서 사용한 하이퍼 파라미터는 다음과 같습니다.
+  * epoch = 10
+  * learning_rate
+    * 0.01 for epoch [0, 5)
+    * 0.001 for epoch [5, 10)
   * weight_decay = 0.0002
   * momentum = 0.9
 
@@ -361,6 +369,33 @@ def ResNet110():
 |테스트(test)||||||||||||
 
 * **ResNet110** 테스트 정확도(Test accuracy): **xx.xx%**
+
+* 클래스별 정확도 분석
+
+|Average precision|0|1|2|3|4|5|6|7|8|9|Total|
+|-----------------|---|---|---|---|---|---|---|---|---|---|---|
+|학습(train)||||||||||||
+|테스트(test)||||||||||||
+
+
+#### 3. (ImageNet Pretrained ResNet) Transfer Learning for CIFAR10
+
+* 실제 구현 코드 예시 (**모델 구현** 파트)
+
+<pre>
+net = torchvision.models.resnet18(pretrained=True)
+
+# 마지막 레이어의 차원을 10차원으로 조절
+num_features = net.fc.in_features
+net.fc = nn.Linear(num_features, 10)
+net = net.to(device)
+</pre>
+
+##### ResNet18 Transfer Learning
+
+* Transfer learning을 위해 torchvision.models에 정의된 ResNet18 아키텍처를 따릅니다.
+
+* 테스트 정확도(Test accuracy): **xx.xx%**
 
 * 클래스별 정확도 분석
 
