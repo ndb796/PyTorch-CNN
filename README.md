@@ -5,7 +5,7 @@
 
 ### MNIST Dataset
 
-* <b>[전체 소스코드](/PyTorch_CNN_MNIST_Dataset.ipynb)</b>는 Google Colab을 이용해 실행할 수 있도록 작성했습니다.
+* <b>[MNIST 학습/평가 전체 소스코드](/PyTorch_CNN_MNIST_Dataset.ipynb)</b>는 Google Colab을 이용해 실행할 수 있도록 작성했습니다.
 * MNIST 예제에 대해서 사용한 하이퍼 파라미터는 다음과 같습니다.
   * epoch = 10
   * learning_rate = 0.01
@@ -175,7 +175,6 @@ net = net.to(device)
 * 실제 구현 코드 (**모델 구현** 파트)
 
 <pre>
-
 class AlexNet(nn.Module):
     def __init__(self):
         super(AlexNet, self).__init__()
@@ -223,24 +222,24 @@ class AlexNet(nn.Module):
         x = torch.flatten(x, 1)
         x = self.classifier(x)
         return x
-
 </pre>
 
-* 테스트 정확도(Test accuracy): **xx.xx%**
+* 테스트 정확도(Test accuracy): **86.14%**
 
 * 클래스별 정확도 분석
 
 |Average precision|0|1|2|3|4|5|6|7|8|9|Total|
 |-----------------|---|---|---|---|---|---|---|---|---|---|---|
-|학습(train)||||||||||||
-|테스트(test)||||||||||||
+|학습(train)|99.20%|99.34%|95.66%|98.38%|96.42%|98.42%|97.48%|99.82%|99.24%|99.62%|98.36%|
+|테스트(test)|88.70%|93.60%|73.20%|77.00%|81.50%|81.00%|87.20%|94.80%|92.00%|92.40%|86.14%|
+
+* **[학습된 모델 다운로드 (AlexNet 70.0MB)](https://postechackr-my.sharepoint.com/:u:/g/personal/dongbinna_postech_ac_kr/EYU8SZo5MzxHlzIjlu4We9QBHpk1LO0I3PgTkv2Gurqcow?download=1)**
 
 #### 2. ResNet for CIFAR10
 
 * 실제 구현 코드 (**모델 구현** 파트)
 
 <pre>
-
 # ResNet을 위한 BasicBlock 클래스 정의
 class BasicBlock(nn.Module):
     def __init__(self, in_planes, planes, stride=1):
@@ -318,17 +317,18 @@ def ResNet56():
 
 def ResNet110():
     return ResNet(BasicBlock, [18, 18, 18])
-
 </pre>
 
-* **ResNet20** 테스트 정확도(Test accuracy): **xx.xx%**
+* **ResNet20** 테스트 정확도(Test accuracy): **85.63%**
 
 * 클래스별 정확도 분석
 
 |Average precision|0|1|2|3|4|5|6|7|8|9|Total|
 |-----------------|---|---|---|---|---|---|---|---|---|---|---|
-|학습(train)||||||||||||
-|테스트(test)||||||||||||
+|학습(train)|95.26%|97.76%|98.40%|96.72%|96.18%|81.74%|88.90%|99.22%|99.10%|96.86%|95.01%|
+|테스트(test)|84.60%|92.80%|87.90%|81.90%|85.80%|67.80%|78.40%|93.30%|94.90%|88.90%|85.63%|
+
+* **[학습된 모델 다운로드 (ResNet 1.07MB)](https://postechackr-my.sharepoint.com/:u:/g/personal/dongbinna_postech_ac_kr/ETrdVDcb8g1KpyZ6qjSprGMB19bCkRQt88_Sdr_VFXn3UQ?download=1)**
 
 * **ResNet32** 테스트 정확도(Test accuracy): **xx.xx%**
 
