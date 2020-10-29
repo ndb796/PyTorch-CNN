@@ -391,9 +391,35 @@ net.fc = nn.Linear(num_features, 10)
 net = net.to(device)
 </pre>
 
-##### ResNet18 Transfer Learning
+#### 3-1) ResNet18 Transfer Learning
 
 * Transfer learning을 위해 torchvision.models에 정의된 ResNet18 아키텍처를 따릅니다.
+
+* 테스트 정확도(Test accuracy): **xx.xx%**
+
+* 클래스별 정확도 분석
+
+|Average precision|0|1|2|3|4|5|6|7|8|9|Total|
+|-----------------|---|---|---|---|---|---|---|---|---|---|---|
+|학습(train)||||||||||||
+|테스트(test)||||||||||||
+
+#### 3-2) ResNet50 Transfer Learning
+
+* Transfer learning을 위해 torchvision.models에 정의된 ResNet50 아키텍처를 따릅니다.
+
+* 테스트 정확도(Test accuracy): **xx.xx%**
+
+* 클래스별 정확도 분석
+
+|Average precision|0|1|2|3|4|5|6|7|8|9|Total|
+|-----------------|---|---|---|---|---|---|---|---|---|---|---|
+|학습(train)||||||||||||
+|테스트(test)||||||||||||
+
+#### 3-3) ResNet101 Transfer Learning
+
+* Transfer learning을 위해 torchvision.models에 정의된 ResNet101 아키텍처를 따릅니다.
 
 * 테스트 정확도(Test accuracy): **xx.xx%**
 
