@@ -16,7 +16,7 @@
 
 <img src="https://user-images.githubusercontent.com/16822641/97537367-0f119780-1a02-11eb-9d35-82ed55c6eeed.png" width="80%">
 
-* 실제 구현 코드 (모델 구현 파트)
+* 실제 구현 코드 (**모델 구현** 파트)
 
 <pre>
 class LeNet(nn.Module):
@@ -67,7 +67,7 @@ class LeNet(nn.Module):
 
 <img src="https://user-images.githubusercontent.com/16822641/97537390-18026900-1a02-11eb-828a-80b156ff28e1.png" width="80%">
 
-* 실제 구현 코드 (모델 구현 파트)
+* 실제 구현 코드 (**모델 구현** 파트)
 
 <pre>
 class AlexNet(nn.Module):
@@ -132,7 +132,7 @@ class AlexNet(nn.Module):
 
 #### 3. (ImageNet Pretrained ResNet) Transfer Learning for MNIST
 
-* 실제 구현 코드 (모델 구현 파트)
+* 실제 구현 코드 (**모델 구현** 파트)
 
 <pre>
 net = torchvision.models.resnet18(pretrained=True)
