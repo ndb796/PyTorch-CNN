@@ -158,7 +158,6 @@ net = net.to(device)
 
 ### CIFAR-10 Dataset
 
-* <b>[전체 소스코드](/PyTorch_CNN_MNIST_Dataset.ipynb)</b>는 Google Colab을 이용해 실행할 수 있도록 작성했습니다.
 * CIFAR-10 예제에 대해서 사용한 하이퍼 파라미터는 다음과 같습니다.
   * epoch = 200
   * learning_rate
@@ -169,6 +168,8 @@ net = net.to(device)
   * momentum = 0.9
 
 #### 1. AlexNet for CIFAR10
+
+* [AlexNet을 활용한 CIFAR-10 학습/평가 소스코드](/PyTorch_CNN_AlexNet_CIFAR10_Dataset.ipynb)는 Google Colab에서 실행할 수 있도록 했습니다.
 
 <img src="https://user-images.githubusercontent.com/16822641/97579665-aba15d00-1a35-11eb-88ce-82c40fa99114.png" width="80%">
 
@@ -320,6 +321,8 @@ def ResNet110():
 </pre>
 
 * **ResNet20** 테스트 정확도(Test accuracy): **85.63%**
+
+* [ResNet20을 활용한 CIFAR-10 학습/평가 소스코드](/PyTorch_CNN_ResNet20_CIFAR10_Dataset.ipynb)는 Google Colab에서 실행할 수 있도록 했습니다.
 
 * 클래스별 정확도 분석
 
