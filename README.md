@@ -354,6 +354,8 @@ def ResNet110():
 
 #### 3. (ImageNet Pretrained ResNet) Transfer Learning for CIFAR10
 
+* [Transfer Learning을 활용한 CIFAR-10 학습/평가 소스코드](/PyTorch_CNN_Transfer_Learning_CIFAR10_Dataset.ipynb)는 Google Colab에서 실행할 수 있도록 했습니다.
+
 * 실제 구현 코드 예시 (**모델 구현** 파트)
 
 <pre>
