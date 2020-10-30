@@ -246,7 +246,7 @@ class AlexNet(nn.Module):
 
 #### 2. ResNet for CIFAR10
 
-* [ResNet을 활용한 CIFAR-10 학습/평가 소스코드](/PyTorch_CNN_ResNet20_CIFAR10_Dataset.ipynb)는 Google Colab에서 실행할 수 있도록 했습니다.
+* [ResNet을 활용한 CIFAR-10 학습/평가 소스코드](/PyTorch_CNN_ResNet_CIFAR10_Dataset.ipynb)는 Google Colab에서 실행할 수 있도록 했습니다.
 
 * 실제 구현 코드 (**모델 구현** 파트)
 
