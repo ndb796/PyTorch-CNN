@@ -246,6 +246,8 @@ class AlexNet(nn.Module):
 
 #### 2. ResNet for CIFAR10
 
+* [ResNet을 활용한 CIFAR-10 학습/평가 소스코드](/PyTorch_CNN_ResNet20_CIFAR10_Dataset.ipynb)는 Google Colab에서 실행할 수 있도록 했습니다.
+
 * 실제 구현 코드 (**모델 구현** 파트)
 
 <pre>
@@ -330,8 +332,6 @@ def ResNet110():
 
 * **ResNet20** 테스트 정확도(Test accuracy): **85.63%**
 
-* [ResNet20을 활용한 CIFAR-10 학습/평가 소스코드](/PyTorch_CNN_ResNet20_CIFAR10_Dataset.ipynb)는 Google Colab에서 실행할 수 있도록 했습니다.
-
 * 클래스별 정확도 분석
 
 |Average precision|0|1|2|3|4|5|6|7|8|9|Total|
@@ -341,42 +341,16 @@ def ResNet110():
 
 * **[학습된 모델 다운로드 (ResNet 1.07MB)](https://postechackr-my.sharepoint.com/:u:/g/personal/dongbinna_postech_ac_kr/ETrdVDcb8g1KpyZ6qjSprGMB19bCkRQt88_Sdr_VFXn3UQ?download=1)**
 
-* **ResNet32** 테스트 정확도(Test accuracy): **xx.xx%**
+* **ResNet44** 테스트 정확도(Test accuracy): **86.65%**
 
 * 클래스별 정확도 분석
 
 |Average precision|0|1|2|3|4|5|6|7|8|9|Total|
 |-----------------|---|---|---|---|---|---|---|---|---|---|---|
-|학습(train)||||||||||||
-|테스트(test)||||||||||||
+|학습(train)|98.86%|99.28%|94.84%|99.78%|96.74%|92.08%|97.52%|98.70%|99.38%|98.62%|97.58%|
+|테스트(test)|89.40%|94.70%|73.70%|89.00%|85.10%|71.10%|86.70%|90.80%|94.70%|91.30%|86.65%|
 
-* **ResNet44** 테스트 정확도(Test accuracy): **xx.xx%**
-
-* 클래스별 정확도 분석
-
-|Average precision|0|1|2|3|4|5|6|7|8|9|Total|
-|-----------------|---|---|---|---|---|---|---|---|---|---|---|
-|학습(train)||||||||||||
-|테스트(test)||||||||||||
-
-* **ResNet56** 테스트 정확도(Test accuracy): **xx.xx%**
-
-* 클래스별 정확도 분석
-
-|Average precision|0|1|2|3|4|5|6|7|8|9|Total|
-|-----------------|---|---|---|---|---|---|---|---|---|---|---|
-|학습(train)||||||||||||
-|테스트(test)||||||||||||
-
-* **ResNet110** 테스트 정확도(Test accuracy): **xx.xx%**
-
-* 클래스별 정확도 분석
-
-|Average precision|0|1|2|3|4|5|6|7|8|9|Total|
-|-----------------|---|---|---|---|---|---|---|---|---|---|---|
-|학습(train)||||||||||||
-|테스트(test)||||||||||||
-
+* **[학습된 모델 다운로드 (ResNet 2.60MB)](https://postechackr-my.sharepoint.com/:u:/g/personal/dongbinna_postech_ac_kr/EU1EorZKm19LrlbFdBajRzkBYJgRqRusyIr-gT1T9N9jDw?download=1)**
 
 #### 3. (ImageNet Pretrained ResNet) Transfer Learning for CIFAR10
 
@@ -395,31 +369,20 @@ net = net.to(device)
 
 * Transfer learning을 위해 torchvision.models에 정의된 ResNet18 아키텍처를 따릅니다.
 
-* 테스트 정확도(Test accuracy): **xx.xx%**
+* 테스트 정확도(Test accuracy): **95.13%**
 
 * 클래스별 정확도 분석
 
 |Average precision|0|1|2|3|4|5|6|7|8|9|Total|
 |-----------------|---|---|---|---|---|---|---|---|---|---|---|
-|학습(train)||||||||||||
-|테스트(test)||||||||||||
+|학습(train)|99.74%|99.64%|99.66%|99.32%|99.60%|98.46%|99.88%|99.78%|99.88%|99.74%|99.57%|
+|테스트(test)|95.80%|96.80%|93.70%|89.90%|95.60%|91.70%|97.90%|96.10%|96.90%|96.90%|95.13%|
+
+* **[학습된 모델 다운로드 (ResNet 42.7MB)](https://postechackr-my.sharepoint.com/:u:/g/personal/dongbinna_postech_ac_kr/EYPho0CixJRFtvyfmRBdtAYBwTAz7tibxTgZKy1cJbQhkQ?download=1)**
 
 #### 3-2) ResNet50 Transfer Learning
 
 * Transfer learning을 위해 torchvision.models에 정의된 ResNet50 아키텍처를 따릅니다.
-
-* 테스트 정확도(Test accuracy): **xx.xx%**
-
-* 클래스별 정확도 분석
-
-|Average precision|0|1|2|3|4|5|6|7|8|9|Total|
-|-----------------|---|---|---|---|---|---|---|---|---|---|---|
-|학습(train)||||||||||||
-|테스트(test)||||||||||||
-
-#### 3-3) ResNet101 Transfer Learning
-
-* Transfer learning을 위해 torchvision.models에 정의된 ResNet101 아키텍처를 따릅니다.
 
 * 테스트 정확도(Test accuracy): **xx.xx%**
 
